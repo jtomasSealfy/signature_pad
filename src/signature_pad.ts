@@ -69,6 +69,7 @@ export default class SignaturePad extends SignatureEventTarget {
 
   constructor(private canvas: HTMLCanvasElement, options: Options = {}) {
     super();
+    console.log('Funciona!!!')
     this.velocityFilterWeight = options.velocityFilterWeight || 0.7;
     this.minWidth = options.minWidth || 0.5;
     this.maxWidth = options.maxWidth || 2.5;
